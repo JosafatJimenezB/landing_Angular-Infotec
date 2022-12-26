@@ -1,0 +1,54 @@
+li{
+  list-style: none;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+footer{
+  width: 100%;
+  display: grid;
+}
+
+.brand{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.brand p{
+  color: #8F93A3;
+}
+
+.list-titles{
+  font-size: 1.1rem;
+  color: #8F93A3;
+}
+
+.links{
+  padding: 0;
+  margin: 0;
+}
+
+
+@media (min-width: 578px){
+  footer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px){
+  footer{
+    padding: 1rem 5rem;
+  }
+
+  .links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

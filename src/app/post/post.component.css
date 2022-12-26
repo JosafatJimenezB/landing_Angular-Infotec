@@ -41,3 +41,22 @@ img{
   width: 100%;
 }
 
+
+@media (min-width: 1281px) {
+
+  .card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  img{
+    border-radius: 0 1rem 1rem 0;
+  }
+
+}
+
+
+
+
+
+

@@ -1,8 +1,9 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
-  <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="'.'">Responsive navbar</a>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light">
+  <div class="container-fluid logo-container">
+    <a class="navbar-brand" [routerLink]="''">
+      <img src="./assets/Logotype.svg" alt="Logo" />
+    </a>
 
-    <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
     <button
       class="navbar-toggler"
       type="button"
@@ -10,12 +11,11 @@
     >
       &#9776;
     </button>
-
-    <!-- Step 2: Add the ngbCollapse directive to the element below. -->
+  </div>
+  <div class="container-fluid links-container col-md-auto">
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav text-center">
         <li class="nav-item active">
-          <!-- Step 4: Close the menu when a link is clicked. -->
           <a class="nav-link" [routerLink]="''" (click)="isMenuCollapsed = true"
             >Home</a
           >

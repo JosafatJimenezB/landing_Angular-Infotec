@@ -1,0 +1,43 @@
+.card{
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 1px solid #E8E8E8;
+}
+
+.card-info{
+  padding: 1rem;
+}
+
+.category{
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  color: #005929;
+  background-color: #E8FFEE;
+}
+
+.title{
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.date{
+  position: relative;
+}
+
+.date span::after{
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 5px;
+}
+
+img{
+  width: 100%;
+}
+
+.card-image{
+  width: 100%;
+}
+

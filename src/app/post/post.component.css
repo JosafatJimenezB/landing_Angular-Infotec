@@ -2,6 +2,7 @@
   width: 100%;
   border-radius: 0.6rem;
   border: 1px solid #E8E8E8;
+  overflow: hidden;
 }
 
 .card-info{
@@ -35,6 +36,8 @@
 
 img{
   width: 100%;
+  object-fit: cover;
+  max-height: 350px;
 }
 
 .card-image{
@@ -43,14 +46,15 @@ img{
 
 
 @media (min-width: 1281px) {
-
-  .card{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  .card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
   }
 
-  img{
-    border-radius: 0 1rem 1rem 0;
+  .category{
+    display: inline-block;
   }
 
 }

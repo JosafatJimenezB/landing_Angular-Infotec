@@ -1,0 +1,58 @@
+.container{
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  padding: 1rem 0.5rem;
+}
+
+.container h2{
+  font-size: 2.2rem;
+}
+
+.container form{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.container form input{
+  width: auto;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+.container form button{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.container p{
+  font-size: 0.9rem;
+}
+
+@media (min-width: 578px){
+  .container{
+    border-radius: 1rem;
+  }
+}
+
+@media (min-width: 1281px) {
+
+  .container{
+    padding: 3rem 0;
+    border-radius: 1rem;
+  }
+
+}

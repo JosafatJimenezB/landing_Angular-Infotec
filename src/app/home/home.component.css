@@ -1,13 +1,46 @@
 .container{
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: 100%;
+  padding: 0;
 }
 
 .container h3{
+  text-align: start;
   margin: 1rem 0;
   font-size: 2.3rem;
   color: #73778C;
+  margin: 1rem;
+}
+
+.central-post,
+.latest-post{
+  padding: 1rem;
+}
+
+.central-post > app-post.card{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.latest-post{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 1.3rem;
+}
+
+.suscribe-section{
+  width: 100%;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+@media (min-width: 1281px) {
+
+  .container h3{
+    margin: 1.5rem 0;
+  }
+
+  .central-post,
+  .latest-post{
+    padding: 0;
+  }
 }

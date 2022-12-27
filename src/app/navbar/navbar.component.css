@@ -20,3 +20,19 @@
   padding: 1rem;
   border-bottom: 1px solid #ccc;
 }
+
+.btn-registrar{
+  background-color: #dadada;
+  color: #000;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-registrar:hover{
+  background-color: #000;
+  color: #fff;
+}
